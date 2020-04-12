@@ -5,7 +5,7 @@
     <title></title>
     <style>
     /* Style inputs with type="text", select elements and textareas */
-    input[type=text], select, textarea {
+    input[type=text], input[type=number], select, textarea {
       width: 100%; /* Full width */
       padding: 12px; /* Some padding */
       border: 1px solid #ccc; /* Gray border */
@@ -43,11 +43,8 @@
     <div class="container">
       <form action="action_page.php">
 
-        <label for="fname">학번</label>
-        <input type="text" id="fname" name="firstname" placeholder="예) 3406">
-
-        <!-- <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.."> -->
+        <label for="classnum">학번</label>
+        <input type="number" id="classnum" name="classnum" placeholder="예) 3406">
 
         <label for="num">우산 번호</label>
         <select id="num" name="num">
@@ -57,7 +54,7 @@
         </select>
 
         <label for="what">무엇을 하실건가요?</label>
-        <select id="what" name="country">
+        <select id="what" name="what">
           <option value="rent">대여</option>
           <option value="return">반납</option>
         </select>
